@@ -1,6 +1,9 @@
-import unittest
-import timed_output as TO
+   import unittest
+   from tympy import compare
 
-TO.compare(["files/example_1.py", "files/example_2.py"],
-           ["sum", "SuM"],
-           [(4, 5), (4, 9)])
+   class TestCompare(unittest.TestCase):
+       def test_compare(self):
+           # Write your test here
+
+   if __name__ == '__main__':
+       unittest.main()
