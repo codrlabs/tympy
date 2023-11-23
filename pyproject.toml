@@ -1,15 +1,22 @@
-  [build-system]
-  requires = ["setuptools", "wheel"]
-  build-backend = "setuptools.build_meta"
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
-  [tool.poetry.dependencies]
-  python = "^3.8"
+[project]
+name = "tympy"
+version = "0.0.1"
+authors = [
+  { name="Nidal Iguer", email="hello@inidal.dev" },
+]
+description = "A package to compare the execution times of two Python scripts."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 
-  [tool.poetry.dev-dependencies]
-  pytest = "^6.2.5"
-
-  [tool.poetry.metadata]
-  name = "timed_output"
-  version = "0.1.0"
-  description = "A package to compare the execution times of two Python scripts."
-  authors = ["Nidal Iguer <hello@inidal.dev>"]
+[project.urls]
+Homepage = "https://github.com/inidal/tympy"
+Issues = "https://github.com/inidal/tympy/issues"
