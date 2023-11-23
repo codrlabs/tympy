@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='timed_output',
-    version='0.1',
-    packages=find_packages(),
+    name='tympy',
+    version='0.0.1',
+    packages=find_packages(include=["tympy*"]),
     description='A Python library for observing output and execution times of scripts.',
     author='Nidal Iguer',
     author_email='hello@inidal.dev',
-    url='https://github.com/inidal/timed_output',
+    url='https://github.com/inidal/tympy',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
