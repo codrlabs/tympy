@@ -1,0 +1,15 @@
+  [build-system]
+  requires = ["setuptools", "wheel"]
+  build-backend = "setuptools.build_meta"
+
+  [tool.poetry.dependencies]
+  python = "^3.8"
+
+  [tool.poetry.dev-dependencies]
+  pytest = "^6.2.5"
+
+  [tool.poetry.metadata]
+  name = "timed_output"
+  version = "0.1.0"
+  description = "A package to compare the execution times of two Python scripts."
+  authors = ["Nidal Iguer <hello@inidal.dev>"]
