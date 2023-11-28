@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='tympy',
-    version='0.1.0',
+    version='0.1.1',
     packages=find_packages(include=["tympy*"]),
     description='A Python library for observing output and execution times of scripts.',
     author='Nidal Iguer',
