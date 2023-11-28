@@ -26,6 +26,14 @@ def compare(*args):
     else:
         arguments = [args[2]] * len(functions)
 
+    # Check if the length of functions and arguments is either 1 or equal to the length of files
+    if len(functions) != 1 and len(functions) != len(files):
+        raise ValueError(
+            "The length of functions must be either 1 or equal to the length of files.")
+    if len(arguments) != 1 and len(arguments) != len(files):
+        raise ValueError(
+            "The length of arguments must be either 1 or equal to the length of files.")
+
     execution_times = []
 
     # for i in range(len(files)):
@@ -57,10 +65,18 @@ def compare(*args):
             f"\n======= Execution time for {script_path}: {execution_time} seconds")
 
     print("\n====================================")
-    if execution_times[0] > execution_times[1]:
-        print(f"⇲ {files[1]} is faster")
-    elif execution_times[0] < execution_times[1]:
-        print(f"⇲ {files[0]} is faster")
+    min_time = min(execution_times)
+    max_time = max(execution_times)
+    min_scripts = [files[i]
+                   for i, time in enumerate(execution_times) if time == min_time]
+    max_scripts = [files[i]
+                   for i, time in enumerate(execution_times) if time == max_time]
+    if len(min_scripts) > 1:
+        print(f"⇲ {', '.join(min_scripts)} are the fastest")
     else:
-        print("⇲ Both scripts have the same execution time")
+        print(f"⇲ {', '.join(min_scripts)} is the fastest")
+    if len(max_scripts) > 1:
+        print(f"⇲ {', '.join(max_scripts)} are the slowest")
+    else:
+        print(f"⇲ {', '.join(max_scripts)} is the slowest")
     print("====================================\n")
