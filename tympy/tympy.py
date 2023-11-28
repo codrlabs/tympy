@@ -4,7 +4,7 @@ import importlib
 
 def compare(*args):
     """
-    This function displays the output and execution times of two Python scripts.
+    This function displays the output and execution times of two or more Python scripts.
     """
 
     if len(args) != 3:
