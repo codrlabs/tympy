@@ -7,7 +7,7 @@ setup(
     description='A Python library for observing output and execution times of scripts.',
     author='Nidal Iguer',
     author_email='hello@inidal.dev',
-    url='https://github.com/inidal/tympy',
+    url='https://github.com/codrlabs/tympy',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',

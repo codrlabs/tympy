@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/inidal/tympy"
-Issues = "https://github.com/inidal/tympy/issues"
+Homepage = "https://github.com/codrlabs/tympy"
+Issues = "https://github.com/codrlabs/tympy/issues"
