@@ -31,4 +31,4 @@ deploy:
     name: production
 
   only:
-    - main # Only run the deploy job for the master branch
+    - main # Only run the deploy job for the main branch
